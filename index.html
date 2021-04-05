@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Hairdresser</title>
+    <meta name="description" content="Hairdresser salon website - project Koziol, AGH" />
+    <meta name="keywords" content="hairdresser, salon" />
+    <!--Logo vector created by rawpixel.com - www.freepik.com-->
+    <link rel="icon" href="./img/logo.png" />
+    <!-- Facebook -->
+    <meta property="og:title" content="The Hairdresser" />
+    <meta property="og:image" content="./img/logo.png" />
+    <meta property="og:description" content="Hairdresser salon website - project Koziol, AGH" />
+    <meta property="og:type" content="website" />
+    <!-- Bootstrap/MDB -->
+    <link href="./mdb/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./mdb/css/mdb.min.css" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section id="modal" class="justify-content-center align-items-center">
+            <div class="modal-content justify-content-between align-items-center">
+                <div class="row modal-background">
+                    <p>Congratulations</p>
+                </div>
+                <div class="row">
+                    <p>Rezerwacja zarezerwowana!</p>
+                </div>
+                <div class="row modal-background">
+                    <p>- Hairdresser Team</p>
+                </div>
+            </div>
+        </section>
+
+
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" height="50" width="50" alt="logo" loading="lazy" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#offer">Offer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reservation">Make a reservation</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="view jarallax" data-jarallax='{"speed": 0.2}'>
+
+                <div id="carousel-intro" class="carousel slide carousel-fade view" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-intro" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-intro" data-slide-to="1"></li>
+                        <li data-target="#carousel-intro" data-slide-to="2"></li>
+                        <li data-target="#carousel-intro" data-slide-to="3"></li>
+                        <li data-target="#carousel-intro" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/main-photo-1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/main-photo-2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/main-photo-3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/main-photo-4.jpg" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/main-photo-5.jpg" alt="Fifth slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-intro" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-intro" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+
+                <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mb-4 white-text text-center" id="intro">
+                                <h1 class="h1-reponsive white-text font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s">The Hairdresser</h1>
+                                <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                                <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit!</strong></h5>
+                                <a class="btn wow fadeInDown btn-carmel" data-wow-delay="0.4s" href="#offer">Book now</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="dark-grey-text text-center container my-5 padding" id="about">
+            <h3 class="font-weight-bold black-text mb-4 pb-2">About</h3>
+            <hr class="w-header mb-4">
+            <p>Integer ac accumsan leo, et pretium neque. Aliquam tempus odio rhoncus ullamcorper vestibulum. Phasellus massa nibh, ornare eu interdum vel, facilisis et enim. Pellentesque eu suscipit dui. Mauris efficitur ullamcorper convallis. Sed scelerisque
+                tellus eget quam feugiat vulputate. Pellentesque laoreet fringilla nulla et posuere. Sed dictum convallis volutpat. Phasellus lacinia interdum mauris id commodo. Aliquam erat volutpat. Duis lacinia tincidunt tortor nec semper. Praesent
+                at elit ut odio pulvinar tempor. Donec quis viverra sapien, ac gravida nibh. Aliquam erat volutpat.</p>
+            <p>Aliquam luctus mauris nec massa vestibulum, id mattis risus placerat. Ut pulvinar consequat turpis eget ultrices. Morbi at dolor sed ipsum tempor maximus sed sed lectus. Mauris bibendum elit sapien, eget posuere sapien tincidunt in. Duis sed
+                arcu vitae enim dapibus molestie vitae vel nibh. In imperdiet nec magna et tristique. Vestibulum ut lorem purus. Suspendisse potenti.</p>
+
+            <div class="row centered-gallery">
+                <div class="col-3"><img src="./img/main-photo-5.jpg" alt="sample photo"></div>
+                <div class="col-3"><img src="./img/main-photo-7.jpg" alt="sample photo"></div>
+                <div class="col-3"><img src="./img/main-photo-6.jpg" alt="sample photo"></div>
+            </div>
+        </section>
+
+
+        <section class="text-center p-5 padding" id="offer">
+            <div class="row d-flex justify-content-center">
+                <div class="container align-verical">
+                    <h3 class="font-weight-bold black-text mb-4 pb-2">Offer</h3>
+                    <hr class="w-header mb-4">
+                    <p>Integer ac accumsan leo, et pretium neque. Aliquam tempus odio rhoncus ullamcorper vestibulum. Phasellus massa nibh, ornare eu interdum vel, facilisis et enim.</p>
+
+                    <div class="row">
+                        <div class="col-12 col-sm-4 align-verical">
+                            <div class="card">
+                                <em class="far fa-heart"></em>
+                                <h4>Item 1</h4>
+                                <p>Quisque vulputate fermentum:</p>
+                                <ul>
+                                    <li>pulvinar consequat</li>
+                                    <li>placerat tempus fringilla</li>
+                                    <li>vel purus</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-4 align-verical">
+                            <div class="card">
+                                <em class="fas fa-hand-holding-heart"></em>
+                                <h4>Item 2</h4>
+                                <p>Quisque vulputate fermentum:</p>
+                                <ul>
+                                    <li>pulvinar consequat</li>
+                                    <li>placerat tempus fringilla</li>
+                                    <li>vel purus</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-4 align-verical">
+                            <div class="card">
+                                <em class="far fa-star"></em>
+                                <h4>Item 3</h4>
+                                <p>Quisque vulputate fermentum:</p>
+                                <ul>
+                                    <li>pulvinar consequat</li>
+                                    <li>placerat tempus fringilla</li>
+                                    <li>vel purus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="dark-grey-text text-center container my-5 padding" id="reservation">
+            <h3 class="font-weight-bold black-text mb-4 pb-2">Make a reservation</h3>
+            <hr class="w-header mb-4">
+            <p>Aliquam luctus mauris nec massa vestibulum, id mattis risus placerat. Ut pulvinar consequat turpis eget ultrices. Morbi at dolor sed ipsum tempor maximus sed sed lectus. Mauris bibendum elit sapien, eget posuere sapien tincidunt in. Duis sed
+                arcu vitae enim dapibus molestie vitae vel nibh. In imperdiet nec magna et tristique. Vestibulum ut lorem purus. Suspendisse potenti.</p>
+
+
+
+            <div class="row form-field">
+                <div class="col-md-6 col-12 d-flex flex-column p-5">
+                    <h2>Book</h2>
+
+                    <p>In imperdiet nec magna et tristique. Vestibulum ut lorem purus. Suspendisse potenti.</p>
+                    <form onsubmit="booking()">
+                        <div class="row mb-4">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="input-name" class="form-control" />
+                                    <label class="form-label" for="input-name">First name</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="input-surname" class="form-control" />
+                                    <label class="form-label" for="input-surname">Last name</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="email" id="input-mail" class="form-control" />
+                            <label class="form-label" for="input-mail">Email address</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="tel" id="input-phone" class="form-control" pattern="\+?[0-9]{9,11}" />
+                            <label class="form-label" for="input-phone">Phone number</label>
+                        </div>
+
+
+                        <div class="form-outline mb-4">
+                            <input type="date" id="input-date" value="2021-04-03" class="form-control">
+                            <label class="form-label" for="input-date">Date</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label for="cars">Choose hour:</label>
+
+                            <select name="hours" id="hours">
+                                <option value="8">8:00</option>
+                                <option value="9">9:00</option>
+                                <option value="10">10:00</option>
+                                <option value="11">11:00</option>
+                                <option value="12">12:00</option>
+                                <option value="13">13:00</option>
+                                <option value="14">14:00</option>
+                                <option value="15">15:00</option>
+                            </select>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <label for="cars">Choose serivce:</label>
+
+                            <select name="service" id="services">
+                                <option value="1">Item 1</option>
+                                <option value="2">Item 2</option>
+                                <option value="3">Item 3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-check form-switch mb-4">
+                            <input class="form-check-input" type="checkbox" id="input-first" checked />
+                            <label class="form-check-label" for="input-first">If your first visit</label>
+                        </div>
+
+                        <p id="error-text"></p>
+                        <button type="submit" class="btn btn-carmel" id="btn-book">Book</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-12 d-flex flex-column bg-image" id="form-bg"></div>
+
+            </div>
+
+
+        </section>
+
+
+        <footer class="pt-4 bg-dark">
+            <div class="container-fluid text-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <img src="./img/logo.png" alt="logo">
+                        <p>The Hairdresser - Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <em class="far fa-envelope"></em> Mail
+                                <p class="grey-text">mail@gmail.com</p>
+                            </li>
+                            <li>
+                                <em class="fas fa-phone-alt"></em> Phone
+                                <p class="grey-text">12 353 11 22</p>
+                            </li>
+                            <li>
+                                <em class="fas fa-map-marker-alt"></em> Address
+                                <p class="grey-text">Kraków, Polska</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Follow me</h5>
+
+                        <a href="https://www.facebook.com/" target="_blank" class="grey-text">
+                            <em class="fab fa-facebook-f"></em>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="grey-text">
+                            <em class="fab fa-instagram"></em>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2021 Copyright Kozioł Anna, AGH</div>
+        </footer>
+
+    </main>
+
+
+
+    <!-- Scripts -->
+    <script src="./mdb/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/popper.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/c30483eab7.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./scripts/variables.js"></script>
+    <script type="text/javascript" src="./scripts/validators.js"></script>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+
+
+</body>
+
+</html>

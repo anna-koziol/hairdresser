@@ -1,0 +1,293 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    background: #fff;
+    padding-right: 0!important;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    width: 100vw;
+    max-width: 100vw!important
+}
+
+html {
+    scroll-behavior: smooth!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+    font-family: 'Parisienne', cursive;
+}
+
+h1 {
+    font-size: 3rem!important;
+    letter-spacing: 8px;
+}
+
+h5 {
+    letter-spacing: 3px
+}
+
+::selection {
+    background: #b89d70;
+}
+
+::-moz-selection {
+    background: #b89d70;
+}
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #1f2324;
+    background-color: #242829
+}
+
+::-webkit-scrollbar-thumb {
+    background: -webkit-linear-gradient(to top #b89d70, #b89d70);
+    background: linear-gradient(to top, #b89d70, #b89d70);
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: -webkit-linear-gradient(to bottom #b89d70, #b89d70);
+    background: linear-gradient(to bottom, #b89d70, #b89d70);
+    transition-delay: 1s!important;
+    cursor: pointer!important
+}
+
+.view {
+    height: 100vh
+}
+
+.top-nav-collapse {
+    background-color: #212121!important
+}
+
+#intro {
+    z-index: 5!important;
+    color: white;
+}
+
+#intro h5 {
+    letter-spacing: 5px;
+    font-size: 0.75rem
+}
+
+#intro a,
+button {
+    background-color: #b89d70;
+    text-shadow: 0 0 1px #ffffffbe;
+}
+
+#intro a:hover,
+button:hover {
+    background-color: #262626;
+    color: white !important;
+    transition: 1s;
+}
+
+.btn-carmel {
+    background-color: #b89d70;
+    color: white;
+}
+
+header {
+    background-color: #1f2324
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px
+}
+
+.navbar-brand img {
+    width: 50px
+}
+
+.align-verical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.carousel-inner img {
+    height: 100vh;
+    object-fit: cover
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    z-index: 6!important
+}
+
+.carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px
+}
+
+#carousel-intro img {
+    opacity: .5
+}
+
+#offer .card {
+    border: 1px solid #b89e7080;
+    width: 90%;
+    padding: 5%;
+    font-size: smaller;
+    margin-top: 100px;
+}
+
+#offer li {
+    text-align: left;
+}
+
+#offer em {
+    color: #b89e7080;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.centered-gallery {
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#about .centered-gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #b89d70;
+}
+
+#reservation img {
+    max-width: 50%;
+}
+
+.form-field {
+    border: 1px solid #b89d70;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: left;
+    -webkit-box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 5%);
+}
+
+.form-check-input[type=checkbox]:checked,
+.form-check-input:focus,
+.form-check-input:checked {
+    background-color: #b89d70 !important;
+}
+
+.form-switch .form-check-input:checked[type=checkbox]:after {
+    background-color: #836f4d;
+}
+
+select {
+    padding: .33em .75em;
+    border-radius: .25rem;
+    border: 1px solid #bdbdbd;
+}
+
+
+/*https://mdbootstrap.com/snippets/standard/grzegorz-bujanski/2852722#css-tab-view*/
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading {
+    border: .125rem solid #b89d70;
+    border-right: 0px solid #b89d70;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-middle {
+    border-bottom: .125rem solid;
+    border-color: #b89d70;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-color: currentcolor currentcolor currentcolor #b89d70;
+    border: .125rem solid #b89d70;
+    border-left: 0px solid #b89d70;
+}
+
+.form-outline .form-control:focus~.form-label {
+    color: #b89d70;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #b89d70;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+hr {
+    width: 80px;
+    margin: auto;
+}
+
+#form-bg {
+    background-image: url("/img/main-photo-2.jpg");
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+footer .fab {
+    margin-right: 10px;
+    color: white;
+}
+
+footer img {
+    width: 60px;
+    margin-bottom: 30px
+}
+
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.2);
+}
+
+#error-text {
+    font-weight: bold;
+    color: #d11b1b;
+}
+
+#modal {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+}
+
+.modal-content {
+    z-index: 99;
+    width: 400px;
+    height: 200px;
+    position: fixed;
+}
+
+.modal-background {
+    background-color: #836f4d;
+    width: 100%;
+    color: white;
+    font-family: 'Parisienne', cursive;
+}
+
+#modal p {
+    margin: 0;
+    padding: 10px;
+}
