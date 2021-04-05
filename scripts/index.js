@@ -18,6 +18,10 @@ function booking() {
         validationStatus = false;
         error.innerHTML += "Error! Incorrect mail format. ";
     }
+    if (!validatePhone()) {
+        validationStatus = false;
+        error.innerHTML += "Error! Incorrect phone number format. ";
+    }
 
 
     if (validationStatus) {
@@ -29,12 +33,20 @@ function booking() {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 console.log(this.responseText);
-                const myModal = document.getElementById('exampleModal')
-                const myInput = document.getElementById('myInput')
 
-                myModal.addEventListener('shown.mdb.modal', () => {
-                    myInput.focus()
-                })
+                if (this.responseText == "booked") {
+                    const modal = document.getElementById('modal');
+
+                    modal.classList.add("modal-flex");
+
+                    setTimeout(function() {
+                        modal.classList.remove("modal-flex");
+                    }, 4000);
+                } else if (this.responseText == "busy") {
+                    error.innerHTML = "The selected date is already taken, try another one. ";
+                } else {
+                    error.innerHTML = "Error! Unexpected error, please try again later. ";
+                }
             }
         };
 

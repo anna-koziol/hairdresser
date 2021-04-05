@@ -15,6 +15,13 @@ function validateEmail() {
     }
 }
 
+function validatePhone() {
+    if (phone.length > 8 && phone.length < 12) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 function validateDate() {
     let today = new Date().toISOString().slice(0, 10);

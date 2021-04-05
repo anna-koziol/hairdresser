@@ -239,7 +239,7 @@ hr {
 }
 
 #form-bg {
-    background-image: url("/img/main-photo-2.jpg");
+    background-image: url("../img/main-photo-2.jpg");
 }
 
 footer {
@@ -269,7 +269,6 @@ footer img {
 #modal {
     width: 100vw;
     height: 100vh;
-    display: flex;
     position: absolute;
 }
 
@@ -290,4 +289,12 @@ footer img {
 #modal p {
     margin: 0;
     padding: 10px;
+}
+
+.modal-hide {
+    display: none;
+}
+
+.modal-flex {
+    display: flex;
 }
