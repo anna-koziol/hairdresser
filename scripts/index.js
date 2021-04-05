@@ -52,8 +52,6 @@ function booking() {
 
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlhttp.send("name=" + name + "&surname=" + surname + "&mail=" + mail + "&phone=" + phone + "&date=" + date + "&hour=" + datetime + "&service=" + service + "&first=" + first);
-
-
     }
 
 }

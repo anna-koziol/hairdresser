@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Hairdresser</title>
+    <meta name="description" content="Hairdresser salon website - project Koziol, AGH" />
+    <meta name="keywords" content="hairdresser, salon" />
+    <!--Logo vector created by rawpixel.com - www.freepik.com-->
+    <link rel="icon" href="./img/logo.png" />
+    <!-- Facebook -->
+    <meta property="og:title" content="The Hairdresser" />
+    <meta property="og:image" content="./img/logo.png" />
+    <meta property="og:description" content="Hairdresser salon website - project Koziol, AGH" />
+    <meta property="og:type" content="website" />
+    <!-- Bootstrap/MDB -->
+    <link href="./mdb/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./mdb/css/mdb.min.css" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo.png" height="50" width="50" alt="logo" loading="lazy" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html#offer">Offer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html#reservation">Make a reservation</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./bookings.html">Bookings list</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+
+        <section class="dark-grey-text text-center container my-5 mt-10 padding" id="gallery">
+            <h1 class="font-weight-bold black-text mb-4 pb-2">Bookings</h1>
+            <hr class="w-header mb-4">
+
+            <table id="reservations-table">
+                <tr>
+                    <th>Date</th>
+                    <th>Service</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Phone</th>
+                    <th>Mail</th>
+                    <th>First Visit</th>
+                </tr>
+            </table>
+        </section>
+
+
+
+        <footer class="pt-4 bg-dark">
+            <div class="container-fluid text-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <img src="./img/logo.png" alt="logo">
+                        <p>The Hairdresser - Lorem ipsum dolor sit amet</p>
+                    </div>
+
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <em class="far fa-envelope"></em> Mail
+                                <p class="grey-text">mail@gmail.com</p>
+                            </li>
+                            <li>
+                                <em class="fas fa-phone-alt"></em> Phone
+                                <p class="grey-text">12 353 11 22</p>
+                            </li>
+                            <li>
+                                <em class="fas fa-map-marker-alt"></em> Address
+                                <p class="grey-text">Kraków, Polska</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-md-0 mb-3">
+                        <h5 class="text-uppercase">Follow me</h5>
+
+                        <a href="https://www.facebook.com/" target="_blank" class="grey-text">
+                            <em class="fab fa-facebook-f"></em>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="grey-text">
+                            <em class="fab fa-instagram"></em>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2021 Copyright Kozioł Anna, AGH</div>
+        </footer>
+
+    </main>
+
+
+
+    <!-- Scripts -->
+    <script src="./mdb/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/popper.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./mdb/js/mdb.min.js"></script>
+    <script src="https://kit.fontawesome.com/c30483eab7.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="./scripts/reservationsList.js"></script>
+
+</body>
+
+</html>

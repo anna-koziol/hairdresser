@@ -298,3 +298,68 @@ footer img {
 .modal-flex {
     display: flex;
 }
+
+.mt-10 {
+    margin-top: 10rem !important;
+}
+
+.gallery-square {
+    height: 25vw;
+    background-color: #b89d70;
+    border: 1px solid #836f4d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery-square:hover {
+    -webkit-animation: scale 1.5s cubic-bezier(0.5, 0.57, 0.75, 1.000) both;
+    animation: scale 0.5s cubic-bezier(0.5, 0.57, 0.75, 1.000) both;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        background-size: cover;
+    }
+    25% {
+        background-size: 150%;
+    }
+    50% {
+        background-size: 150%;
+    }
+    75% {
+        background-size: 180%;
+    }
+    100% {
+        background-size: 230%;
+    }
+}
+
+@keyframes scale {
+    0% {
+        background-size: cover;
+    }
+    25% {
+        background-size: 150%;
+    }
+    50% {
+        background-size: 150%;
+    }
+    75% {
+        background-size: 180%;
+    }
+    100% {
+        background-size: 230%;
+    }
+}
+
+#reservations-table td,
+#reservations-table th {
+    border: 1px solid #1f2324;
+    padding: 10px;
+}
+
+#reservations-table th {
+    background-color: #262626;
+    color: #fff;
+}
