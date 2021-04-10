@@ -7,7 +7,7 @@ function validateNameSurname() {
 }
 
 function validateEmail() {
-    //https://www.w3resource.com/javascript/form/email-validation.php
+    //regex from https://www.w3resource.com/javascript/form/email-validation.php
     if ((/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail)) && mail.indexOf('.') > 0) {
         return true;
     } else {

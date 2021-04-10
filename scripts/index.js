@@ -25,7 +25,6 @@ function booking() {
 
 
     if (validationStatus) {
-        //Funkcja PHP
         var datetime = date + " " + hour + ':00';
 
         var xmlhttp = new XMLHttpRequest();

@@ -21,30 +21,30 @@
             $db = new PDO($base, $root, $password);
             $db->exec("set names utf8");
 
-            //sprawdzanie czy termin jest wolny
+            //checking if date is free
             $query = "SELECT * FROM `reservations` WHERE `hour` = '$hour'";
             $result = $db->query($query);
             $freeSlot = $result->fetch(PDO::FETCH_ASSOC); 
 
             if(!$freeSlot) {
-                //sprawdzanie czy dane konto jest już dodane
+                //checking if account has already been added
                 $query = "SELECT * FROM `client` WHERE mail = '$mail'";
                 $result = $db->query($query);
                 $row = $result->fetch(PDO::FETCH_ASSOC);          
 
-                //dodanie do baazy nowego konta klienta
+                //adding new client to database
                 if(!$row) {
                     $query = "INSERT into `client` values ('','$name','$surname','$mail','$phone')";
                     $result = $db->query($query);
                 }
 
-                //zczytanie ID klienta
+                //read customer ID
                 $query = "SELECT `clientID` FROM `client` WHERE `mail` = '$mail'";
                 $result = $db->query($query);
                 $row = $result->fetch(PDO::FETCH_ASSOC);     
                 $clientID = $row['clientID'];
                 
-                //zapis rezerwacji
+                //booking 
                 $query = "INSERT INTO `reservations` VALUES ('', '$clientID', '$date', '$hour', '$service', '$firstConsultation');";
                 $result = $db->query($query);
                 echo 'booked';

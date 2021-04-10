@@ -1,3 +1,5 @@
+/*------MAIN SELECTORS------*/
+
 body {
     margin: 0 auto;
     padding: 0;
@@ -21,8 +23,7 @@ html {
 h1,
 h2,
 h3,
-h4,
-h6 {
+h4 {
     font-family: 'Parisienne', cursive;
 }
 
@@ -65,9 +66,49 @@ h5 {
     cursor: pointer!important
 }
 
+hr {
+    width: 80px;
+    margin: auto;
+}
+
+
+/*------MAIN CLASSES------*/
+
 .view {
     height: 100vh
 }
+
+.btn-carmel {
+    background-color: #b89d70;
+    color: white;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px
+}
+
+.align-verical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.centered-gallery {
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.direction-col {
+    flex-direction: column;
+}
+
+.mt-10 {
+    margin-top: 10rem !important;
+}
+
+
+/*------INTRO------*/
 
 .top-nav-collapse {
     background-color: #212121!important
@@ -96,28 +137,22 @@ button:hover {
     transition: 1s;
 }
 
-.btn-carmel {
-    background-color: #b89d70;
-    color: white;
-}
-
 header {
     background-color: #1f2324
-}
-
-.hr-light {
-    border-top: 3px solid #fff;
-    width: 80px
 }
 
 .navbar-brand img {
     width: 50px
 }
 
-.align-verical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #b89d70;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .carousel-inner img {
@@ -141,6 +176,9 @@ header {
     opacity: .5
 }
 
+
+/*------OFFER------*/
+
 #offer .card {
     border: 1px solid #b89e7080;
     width: 90%;
@@ -160,16 +198,17 @@ header {
     margin-top: 20px;
 }
 
-.centered-gallery {
-    justify-content: center;
-    margin-top: 50px;
-}
+
+/*------ABOUT------*/
 
 #about .centered-gallery img {
     max-width: 100%;
     height: auto;
     border: 3px solid #b89d70;
 }
+
+
+/*------RESERVATION------*/
 
 #reservation img {
     max-width: 50%;
@@ -201,7 +240,7 @@ select {
 }
 
 
-/*https://mdbootstrap.com/snippets/standard/grzegorz-bujanski/2852722#css-tab-view*/
+/* from: mdbootstrap.com/snippets/standard/grzegorz-bujanski/2852722#css-tab-view  */
 
 .form-outline .form-control:focus~.form-notch .form-notch-leading {
     border: .125rem solid #b89d70;
@@ -223,24 +262,43 @@ select {
     color: #b89d70;
 }
 
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .show>.nav-link {
-    color: #b89d70;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
-    font-weight: 500;
-}
-
-hr {
-    width: 80px;
-    margin: auto;
-}
-
 #form-bg {
     background-image: url("../img/main-photo-2.jpg");
 }
+
+#error-text {
+    font-weight: bold;
+    color: #d11b1b;
+}
+
+
+/*------RESERVATIONS LIST------*/
+
+#reservations-table td,
+#reservations-table th {
+    border: 1px solid #1f2324;
+    padding: 10px;
+}
+
+#reservations-table th {
+    background-color: #262626;
+    color: #fff;
+}
+
+
+/*------GALLERY------*/
+
+.gallery-square {
+    height: 25vw;
+    background-color: #b89d70;
+    border: 1px solid #836f4d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*------FOOTER------*/
 
 footer {
     color: rgba(255, 255, 255, 0.95);
@@ -261,10 +319,8 @@ footer img {
     color: rgba(255, 255, 255, 0.2);
 }
 
-#error-text {
-    font-weight: bold;
-    color: #d11b1b;
-}
+
+/*------MODAL------*/
 
 #modal {
     width: 100vw;
@@ -299,18 +355,13 @@ footer img {
     display: flex;
 }
 
-.mt-10 {
-    margin-top: 10rem !important;
+#modal h6 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
 }
 
-.gallery-square {
-    height: 25vw;
-    background-color: #b89d70;
-    border: 1px solid #836f4d;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
+/*------ANIMATIONS------*/
 
 .gallery-square:hover {
     -webkit-animation: scale 1.5s cubic-bezier(0.5, 0.57, 0.75, 1.000) both;
@@ -351,15 +402,4 @@ footer img {
     100% {
         background-size: 230%;
     }
-}
-
-#reservations-table td,
-#reservations-table th {
-    border: 1px solid #1f2324;
-    padding: 10px;
-}
-
-#reservations-table th {
-    background-color: #262626;
-    color: #fff;
 }
