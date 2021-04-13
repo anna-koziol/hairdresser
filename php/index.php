@@ -1,7 +1,6 @@
 <?php
     if(isset($_POST))
     {
-        //print_r($_POST);
 
         $name = $_POST['name'];
         $surname = $_POST['surname'];

@@ -74,6 +74,10 @@ hr {
 
 /*------MAIN CLASSES------*/
 
+.row {
+    width: 100%;
+}
+
 .view {
     height: 100vh
 }
@@ -91,7 +95,8 @@ hr {
 .align-verical {
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .centered-gallery {
@@ -366,6 +371,7 @@ footer img {
 .gallery-square:hover {
     -webkit-animation: scale 1.5s cubic-bezier(0.5, 0.57, 0.75, 1.000) both;
     animation: scale 0.5s cubic-bezier(0.5, 0.57, 0.75, 1.000) both;
+    cursor: pointer;
 }
 
 @-webkit-keyframes scale {

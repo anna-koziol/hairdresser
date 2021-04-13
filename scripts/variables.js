@@ -1,14 +1,25 @@
-var name, surname, mail, phone, date, hourIndex, hour, service, first, error;
-
 function getData() {
-    name = document.getElementById("input-name").value;
-    surname = document.getElementById("input-surname").value;
-    mail = document.getElementById("input-mail").value;
-    phone = document.getElementById("input-phone").value;
-    date = document.getElementById("input-date").value;
-    hourIndex = document.getElementById("hours");
-    hour = hourIndex.options[hourIndex.selectedIndex].text;
-    service = document.getElementById("services").value;
-    first = document.getElementById("input-first").checked;
-    error = document.getElementById("error-text");
+    let name = document.getElementById("input-name").value;
+    let surname = document.getElementById("input-surname").value;
+    let mail = document.getElementById("input-mail").value;
+    let phone = document.getElementById("input-phone").value;
+    let date = document.getElementById("input-date").value;
+    let hourIndex = document.getElementById("hours");
+    let hour = hourIndex.options[hourIndex.selectedIndex].text;
+    let service = document.getElementById("services").value;
+    let first = document.getElementById("input-first").checked;
+    let error = document.getElementById("error-text");
+
+    return {
+        name,
+        surname,
+        mail,
+        phone,
+        date,
+        hourIndex,
+        hour,
+        service,
+        first,
+        error
+    };
 }

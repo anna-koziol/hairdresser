@@ -1,31 +1,32 @@
-function booking() {
-    let validationStatus = true;
-    getData();
+function bookingFunction() {
     event.preventDefault();
 
+    let validationStatus = true;
+    const vars = getData();
+
     //Form validation
-    error.innerHTML = " ";
-    if (!validateNameSurname()) {
+    vars.error.innerHTML = " ";
+    if (!validateNameSurname(vars.name, vars.surname)) {
         validationStatus = false;
-        error.innerHTML += "Error! Incorrect name and/or surname format. ";
+        vars.error.innerHTML += "Error! Incorrect name and/or surname format. ";
     }
 
-    if (!validateDate()) {
+    if (!validateDate(vars.date)) {
         validationStatus = false;
-        error.innerHTML += "Error! Selected date should be from the future. ";
+        vars.error.innerHTML += "Error! Selected date should be from the future. ";
     }
-    if (!validateEmail()) {
+    if (!validateEmail(vars.mail)) {
         validationStatus = false;
-        error.innerHTML += "Error! Incorrect mail format. ";
+        vars.error.innerHTML += "Error! Incorrect mail format. ";
     }
-    if (!validatePhone()) {
+    if (!validatePhone(vars.phone)) {
         validationStatus = false;
-        error.innerHTML += "Error! Incorrect phone number format. ";
+        vars.error.innerHTML += "Error! Incorrect phone number format. ";
     }
 
 
     if (validationStatus) {
-        var datetime = date + " " + hour + ':00';
+        var datetime = vars.date + " " + vars.hour + ':00';
 
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("POST", "./php/index.php", true);
@@ -42,15 +43,15 @@ function booking() {
                         modal.classList.remove("modal-flex");
                     }, 4000);
                 } else if (this.responseText == "busy") {
-                    error.innerHTML = "The selected date is already taken, try another one. ";
+                    vars.error.innerHTML = "The selected date is already taken, try another one. ";
                 } else {
-                    error.innerHTML = "Error! Unexpected error, please try again later. ";
+                    vars.error.innerHTML = "Error! Unexpected error, please try again later. ";
                 }
             }
         };
 
         xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xmlhttp.send("name=" + name + "&surname=" + surname + "&mail=" + mail + "&phone=" + phone + "&date=" + date + "&hour=" + datetime + "&service=" + service + "&first=" + first);
+        xmlhttp.send("name=" + vars.name + "&surname=" + vars.surname + "&mail=" + vars.mail + "&phone=" + vars.phone + "&date=" + vars.date + "&hour=" + datetime + "&service=" + vars.service + "&first=" + vars.first);
     }
 
 }
